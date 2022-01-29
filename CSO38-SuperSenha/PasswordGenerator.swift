@@ -12,10 +12,10 @@ class PasswordGenerator {
     
     var numberOfPasswords: Int
     var numberOfCharacters: Int
-    var useLetters: Bool!
-    var useNumbers: Bool!
-    var useCapitalLetters: Bool!
-    var useSpecialLetters: Bool!
+    var useLetters: Bool
+    var useNumbers: Bool
+    var useCapitalLetters: Bool
+    var useSpecialLetters: Bool
 
     var passwords: [String] = []
     
@@ -23,7 +23,7 @@ class PasswordGenerator {
     private let specialCharacters = "!@#$%ˆ&*()_-+=˜`|]}[{':;?/<>.,"
     private let numbers = "0123456789"
     
-    init(numberOfPasswords: Int, numberOfCharacters: Int, useLetters: Bool!, useNumbers: Bool!, useCapitalLetters: Bool!, useSpecialLetters: Bool!) {
+    init(numberOfPasswords: Int, numberOfCharacters: Int, useLetters: Bool, useNumbers: Bool, useCapitalLetters: Bool, useSpecialLetters: Bool) {
         
         var numchars = min(numberOfCharacters, 16)
         numchars = max(numchars, 1)
